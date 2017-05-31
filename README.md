@@ -1,4 +1,4 @@
-Octave: La supercalculadora GIS
+OpenStreetMap ES: situación actual y proyectos de futuro
 
-Presentación a la décima edición de las jornadas de SIGLibre en Girona (Mayo 2016)
+Presentación a las jornadas de SIGLibre en Girona (junio 2017)
 
