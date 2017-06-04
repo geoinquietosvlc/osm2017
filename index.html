@@ -1,290 +1,312 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>OSM-ES 2017</title>
+        <title>OSM-ES 2017</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/sky_osgeo.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi )  'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
 
-				<!-- Portada -->
-				<section>
-						<div>
-							<div style='float:left; width: 150px'>
-								<img src='img/osm_logo.png' width='150' style='float:left;'/>
-							</div>
-							<div style='width: 600px; float: left; margin-left: 10px;'>
-								<h2>OpenStreetMap ES</h2>
-								<h4>Situación actual y proyectos de futuro</h4>
-							</div>
-							<div style='float:right; width: 150px'>
-								<img src='img/200px-Hot_logo.svg.png' width='150' style='float:left; margin-left: 10px;'/>
-							</div>
-						</div>
-						<div style='margin-top: 20px;'>
-							<img src='img/espagueti.png' width='500'/>
-						</div>
-						<a href='http://shiguera.github.io/osm2017'>http://shiguera.github.io/osm2017</a>
-				</section>
+                <!-- Portada -->
+                <section>
+                        <div>
+                            <div style='float:left; width: 150px'>
+                                <img src='img/osm_logo.png' width='150' style='float:left;'/>
+                            </div>
+                            <div style='width: 600px; float: left; margin-left: 10px;'>
+                                <h2>OpenStreetMap y el HOT</h2>
+                            </div>
+                            <div style='float:right; with: 100px;'>
+                                <img src='img/200px-Hot_logo.svg.png' width='150' style='float:left; margin-left: 10px;'/>
+                            </div>
+                        </div>
+                        <div style='margin-top: 20px;'>
+                            <div style='width: 50%; margin: 0 auto;'>
+                            <img src='img/espagueti.png' width='500' />
+                            </div>
+                        </div>
+                        <a href='http://geoinquietosvlc.github.io/osm2017'>http://geoinquietosvlc.github.io/osm2017</a>
+                </section>
 
-				<!-- BIO -->
-				<section>
-	        <h3 style='float:left;'>Santiago Higuera</h3>
-	        <div style='float: right; width: 300px'>
-	          <img src="img/fotomia.jpg" style="float: right; width:280px"/>
-	        </div>
-	        <div style='float: left; width:650px'>
-	          <ul>
-	            <li><a href="http://twitter.com/santiagohiguera">@santiagohiguera</a></li>
-	            <li>Profe en <a href='https://twitter.com/caminosupm?lang=es'>@caminosupm</a></li>
-	            <li>Mi empresa es <a href="http://mercatorlab.com">Mercatorlab</a></li>
-	            <li>Participo en:
-	            <ul>
-	            	<li><a href="http://www2.caminos.upm.es/Departamentos/matematicas/WEBGIE/">Pensamiento Matemático</a></li>
-	              <li><a href="http://osgeo.org">OSGeo</a> y
-	                <a href="http://es.osgeo.org">OSGeo-es</a></li>
-	              <li><a href="http://madrid.geoinquietos.org">Geoinquietos
-	                Madrid</a></li>
-	              <li><a href="http://osm.org">OpenStreetMap</a>
-	            </ul>
-	            </li>
-	            <li>Escribo en:
-	              <ul>
-	                <li><a href="http://mercatorlab.com/wordpress/">Blog Descartes</a></li>
-	                <li><a href="http://infocaminos.readthedocs.org/en/latest/">Manual GNU-Octave</a></li>
-	                <li><a href="http://openlayers.bicimap.es/manualOpenLayers.html">Manual OpenLayers</a></li>
-	              </ul>
-	            </li>
-	          </ul>
-	        </div>
-       		</section>
+    <!-- 2.- Qué es OpenStreetMap -->
+                <section>
+                    <section>
+                        <h2>Qué es OpenStreetMap</h2>
+                        <br>
+                        <p><strong>OpenStreetMap</strong> es una base de datos de información geográfica creada y mantenida de forma voluntaria y colaborativa por una creciente comunidad de entusiastas de los mapas.</p>
+                        <br/>
+                        <p>Los datos contenidos en las bases de datos de <strong>OpenStreetMap</strong> son de acceso libre y gratuito.</p>
+                    </section>
 
-	<!-- 2.- ¿Qué es OpenStreetMap? -->
-				<section>
-					<h2 style='color:#000080'>¿Qué es OpenStreetMap?</h2>
-					<br>
-					<p><strong>OpenStreetMap</strong> es una base de datos de información geográfica creada y mantenida de forma voluntaria y colaborativa por una creciente comunidad de entusiastas de los mapas.</p>
-					<br/>
-					<p>Los datos contenidos en las bases de datos de <strong>OpenStreetMap</strong> son de acceso libre y gratuito.</p>
-				</section>
+                    <section>
+                        <h3>Historia</h3>
+                        <p>OpenStreetMap fue fundado por Steve Coast en 2004</p>
+                        <img src="img/stevecoast.jpg" height=400>
+                        <p><small>Image By © Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons), <a href="http://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.phpcurid=6881931">Link</a></small></p>
+                    </section>
 
-				<!-- ¿Cómo se accede a OpenStreetMap? -->
-				<section>
-					<h2 style='color:#000080'>¿Cómo se accede a OpenStreetMap?</h2>
-					<p>
-						A través del navegador web, en la dirección:<br/>
-					<center><a href="http://openstreetmap.org">openstreetmap.org</a></center>
-					</p>
-					<img src="img/map.png" height=350>
-				</section>
+                     <section>
+                         <h2>OSM 10th Year Anniversary</h2>
+                                <a href="https://www.youtube.com/embed/7sC83j6vzjo" target='_blank'>https://www.youtube.com/embed/7sC83j6vzjo</a>
+                         <iframe width="840" height="473" src="https://www.youtube.com/embed/7sC83j6vzjo" frameborder="0" allowfullscreen></iframe>
+                     </section>
 
-				<section>
-					<h3 style='color:#000080'>Historia</h3>
-					<p>OpenStreetMap fue fundado por Steve Coast en 2004</p>
-					<img src="img/stevecoast.jpg" height=400>
-					<small>Image By © Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons), <a href="http://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=6881931">Link</a></small>
-				</section>
+                    <!-- Cómo se financia OpenStreetMap -->
+                    <section>
+                        <h3>Cómo se financia OpenStreetMap</h3>
+                        <p>
+                            El mantenimiento de servidores y redes de comunicación en base a donaciones voluntarias de particulares y empresas
+                        </p>
+                        <a href="http://donate.openstreetmap.org/" target="_blank">http://donate.openstreetmap.org/</a>
+                        <div>
+                            <a class="image" href="http://donate.openstreetmap.org/" target="_blank">
+                                <img width="450" src="img/support.png" alt="openstreetmap.org">
+                            </a>
+                        </div>
+                    </section>
+                </section>
 
-         <!-- Vídeo decimo aniversario -->
-         <section>
-         	<h2 style='color:#000080'>OSM 10th Year Anniversary</h2>
-					<a href="https://www.youtube.com/embed/7sC83j6vzjo" target='_blank'>https://www.youtube.com/embed/7sC83j6vzjo</a>
-         	<iframe width="840" height="473" src="https://www.youtube.com/embed/7sC83j6vzjo" frameborder="0" allowfullscreen></iframe>
-         </section>
+                <section>
+                    <section>
+                        <h3>Número de usuarios registrados</h3>
+                        <img src="img/members.png" height=550>
+                    </section>
 
-				<section>
-					<h2 style='color:#000080'>OpenStreetMap Time Lapse of Electricity Grid Edits</h2>
-					<a href="https://www.youtube.com/watch?v=_TgQbmWOPHA" target='_blank'>https://www.youtube.com/watch?v=_TgQbmWOPHA/</a>
-					<iframe width="840" height="473" src="https://www.youtube.com/embed/_TgQbmWOPHA" frameborder="0" allowfullscreen></iframe>
-				</section>
+                    <section>
+                        <h3>Usuarios activos última semana / mes</h3>
+                        <img src="img/members30d.png" height=550>
+                    </section>
 
-				<section>
-					<h3 style='color:#000080'>HOTOSM: Humanitariam OpenStreetMap Team</h3>
-					<img src='img/hotosm.png' />
-					<a href='https://hotosm.org/' target='_blank'>https://hotosm.org/</a>
-				</section>
+                    <section>
+                        <h3>Nodos en la base de datos</h3>
+                        <img src="img/nodes.png" height=550>
+                    </section>
 
-				<section>
-					<h3 style='color:#000080'>"Mapping support during the early phases of a response is critical, as responders and donors try to more clearly understand the situation on the ground"</h3>
-					<h5> (UN disaster coordination manager, Pakistan flood emergency 2010)</h5>
-				</section>
-
-				<section>
-					<h3>Each year, disasters around the world kill nearly 100,000 and affect or displace 200 million people.</h3>
-					<br/>
-					<h3>Many of the places where these disasters occur are literally 'missing' from any map</h3>
-					<br/>
-					<h3>First responders lack the information to make valuable decisions regarding relief efforts</h3>
-				</section>
-
-				<!-- ¿Cómo se financia OpenStreetMap? -->
-				<section>
-					<h3 style='color:#000080'>¿Cómo se financia OpenStreetMap</h3>
-					<p>
-						El mantenimiento de servidores y redes de comunicación en base a donaciones voluntarias de particulares y empresas
-					</p>
-					<a href="http://donate.openstreetmap.org/" target="_blank">http://donate.openstreetmap.org/</a>
-					<div>
-						<a class="image" href="http://donate.openstreetmap.org/" target="_blank">
-							<img width="450" src="img/support.png" alt="openstreetmap.org">
-						</a>
-					</div>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Número de usuarios registrados</h3>
-					<img src="img/members.png" height=550>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Usuarios activos última semana / mes</h3>
-					<img src="img/members30d.png" height=550>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Nodos en la base de datos</h3>
-					<img src="img/nodes.png" height=550>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Nodos modificados por día</h3>
-					<img src="img/nodesday.png" height=550>
-				</section>
-				
-				<section>
-					<h3 style='color:#000080'>¿Quién hace OpenStreetMap ahora?</h3>
-					<a href="http://osmlab.github.io/show-me-the-way/" target="_blank">http://osmlab.github.io/show-me-the-way/</a>
-					<iframe width="840" height='473' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://osmlab.github.io/show-me-the-way/" style="border: 1px solid black"></iframe>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Datos agrupados por país</h3>
-					<a href="http://osmstats.neis-one.org/?item=countries" target='_blank'>http://osmstats.neis-one.org/?item=countries</a>
-					<iframe width="840" height="473" src="http://osmstats.neis-one.org/?item=countries" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Miembros diarios activos en España</h3>
-					<img src="img/membersspain.png" height=550>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Nodos modificados por día en España</h3>
-					<img src="img/nodesdayspain.png" height=550>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Usuarios en España</h3>
-					<a href="http://wiki.openstreetmap.org/wiki/Category:Users_in_Spain" target='_blank'>http://wiki.openstreetmap.org/wiki/Category:Users_in_Spain</a>
-					<iframe width="840" height="473" src="http://wiki.openstreetmap.org/wiki/Category:Users_in_Spain" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Cataluña: Homogeneidad en el mapa: #1carrer1nom</h3>
-					<div style='width:600px; float: left;'>
-						<ul>
-							<li>Homogeneización y calidad</li>
-							<li>Niveles de revisión </li>
-							<li>Fase 1: #1carrer1nom </li>
-							<li>Coordinación: Wiki</li>
-							<ul>
-								<li><a href="https://wiki.openstreetmap.org/wiki/WikiProject_Catalan/Revisi%C3%B3_Carrers_Catalunya" target='_blank'>Revisió de Carrers de Catalunya</a></li>
-							</ul>
-							<li>Herramienta de control de calidad</li>
-							<ul>
-								<li><a href="http://qa.poole.ch" target='_blank'>http://qa.poole.ch</a></li>
-							</ul>
-						</ul>
-					</div>
-					<div style='width:300px; margin-left: 10px; float: right'>
-						<img src="img/1carrer1nom.jpg" width="280">
-					</div>
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Zaragoza: accesibilidad</h3>
-					<img src="img/zaragoza.png">
-				</section>
-
-				<section>
-					<h3 style='color:#000080'>Burgos: calidad</h3>
-					<img src="img/burgos.png">
-				</section>
+                    <section>
+                        <h3>Nodos modificados por día</h3>
+                        <img src="img/nodesday.png" height=550>
+                    </section>
+                    <section>
+                        <h3>Quién hace OpenStreetMap ahora</h3>
+                        <a href="http://osmlab.github.io/show-me-the-way/" target="_blank">http://osmlab.github.io/show-me-the-way/</a>
+                        <iframe width="840" height='473' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://osmlab.github.io/show-me-the-way/" style="border: 1px solid black"></iframe>
+                    </section>
+                </section>
 
 
+                <section>
+                    <section>
+                        <h3>Datos agrupados por país</h3>
+                        <a href="http://osmstats.neis-one.org/?item=countries" target='_blank'>http://osmstats.neis-one.org/?item=countries</a>
+                        <iframe width="840" height="473" src="http://osmstats.neis-one.org/?item=countries" frameborder="0" allowfullscreen></iframe>
+                    </section>
 
-				<!-- Lista de correo en español -->
-				<section>
-					<h3 style='color:#000080'>Lista de correo en español de OpenStreetMap</h3>
-					<p><a href="https://lists.openstreetmap.org/listinfo/talk-es">https://lists.openstreetmap.org/listinfo/talk-es</a></p>
-					<a class="image" href="https://lists.openstreetmap.org/listinfo/talk-es" target="_blank"><img width="1030" src="img/osmmail.png" alt="josm"></a>
-				</section>
+                    <section>
+                        <h3>Miembros diarios activos en España</h3>
+                        <img src="img/membersspain.png" height=550>
+                    </section>
 
-				<section>
-					<h3 style='color:#000080'>WIKI Proyecto España</h3>
-					<a href="https://wiki.openstreetmap.org/wiki/ES:Wikiproyecto_Espa%C3%B1a" target='_blank'>https://wiki.openstreetmap.org/wiki/ES:Wikiproyecto_España</a>
-					<img src="img/wikiespana2.png">
-				</section>
-				
-				<section>
-					<h3 style='color:#000080'>Grupo de Telegram: OSM España</h3>	
-					<img src="img/telegram.png" height='600'>
-				</section>				
+                    <section>
+                        <h3>Nodos modificados por día en España</h3>
+                        <img src="img/nodesdayspain.png" height=550>
+                    </section>
 
-				<section>
-					<h3 style='color:#000080'>Riot</h3>
-					<a href="https://riot.im/app/#/room/#openstreetmap-es:matrix.org" target='_blank'>https://riot.im/app/#/room/#openstreetmap-es:matrix.org</a>
-					<img src="img/riot.png">
-				</section>
+                    <section>
+                        <h3>Usuarios en España</h3>
+                        <a href="http://wiki.openstreetmap.org/wiki/Category:Users_in_Spain" target='_blank'>http://wiki.openstreetmap.org/wiki/Category:Users_in_Spain</a>
+                        <iframe width="840" height="473" src="http://wiki.openstreetmap.org/wiki/Category:Users_in_Spain" frameborder="0" allowfullscreen></iframe>
+                    </section>
+                </section>
 
-				<!-- 6.- Darse de alta como usuario -->
-				<section>
-					<h3 style='color:#000080'>Darse de alta como usuario registrado de OpenStreetMap</h3>
-					<p>Para poder editar los mapas es necesario registrarse</p>
-					<a class="image" href="http://openstreetmap.org/" target="_blank">
-						<img width="1030" src="img/alta.png" alt="josm">
-					</a>
-				</section>
+                <section>
+                    <section>
+                        <h3>Cataluña: Homogeneidad en el mapa: #1carrer1nom</h3>
+                        <div style='width:600px; float: left;'>
+                            <ul>
+                                <li>Homogeneización y calidad</li>
+                                <li>Niveles de revisión </li>
+                                <li>Fase 1: #1carrer1nom </li>
+                                <li>Coordinación: Wiki</li>
+                                <ul>
+                                    <li><a href="https://wiki.openstreetmap.org/wiki/WikiProject_Catalan/Revisi%C3%B3_Carrers_Catalunya" target='_blank'>Revisió de Carrers de Catalunya</a></li>
+                                </ul>
+                                <li>Herramienta de control de calidad</li>
+                                <ul>
+                                    <li><a href="http://qa.poole.ch" target='_blank'>http://qa.poole.ch</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div style='width:300px; margin-left: 10px; float: right'>
+                            <img src="img/1carrer1nom.jpg" width="280">
+                        </div>
+                    </section>
 
-				<section>
-					<h3 style='color:#000080'>Proyectos de futuro</h3>
-					<ul>
-						<li>Reactivar asociación OSM España</li>
-						<li>Importaciones</li>
-						<li>Conversaciones con IGN</li>
-					</ul>
-					<br/><br>
-					<h5 style='color:#0000a0; font-weight: bold'>Seguir generando y compartiendo información cartográfica de calidad</h5>
-				</section>
+                    <section>
+                        <h3>Zaragoza: accesibilidad</h3>
+                        <img src="img/zaragoza.png">
+                    </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Santiago Higuera</h3>					
-					<p>
-					<div style="width: 300px;margin-left:auto; margin-right:auto">
-						<a class="image" href="http://wiki.osgeo.org/wiki/Geo_inquietos_Madrid" target="_blank">
-						<img src="img/geoinquietosmad_logo.png" alt="geoinquietosmad" style="float:left; margin:10px; width: 100px">
-						<img src="img/osgeo-es.png" alt="osgeoes" style="float:left; margin:10px; width: 100px">
-						</a>
-					</div>
+                    <section>
+                        <h3>Burgos: calidad</h3>
+                        <img src="img/burgos.png">
+                    </section>
+                </section>
+
+                <!-- Lista de correo en español -->
+                <section>
+                    <section>
+                        <h3>Lista de correo en español de OpenStreetMap</h3>
+                        <p><a href="https://lists.openstreetmap.org/listinfo/talk-es">https://lists.openstreetmap.org/listinfo/talk-es</a></p>
+                        <a class="image" href="https://lists.openstreetmap.org/listinfo/talk-es" target="_blank"><img width="1030" src="img/osmmail.png" alt="josm"></a>
+                    </section>
+
+                    <section>
+                        <h3>WIKI Proyecto España</h3>
+                        <a href="https://wiki.openstreetmap.org/wiki/ES:Wikiproyecto_Espa%C3%B1a" target='_blank'>https://wiki.openstreetmap.org/wiki/ES:Wikiproyecto_España</a>
+                        <img src="img/wikiespana2.png">
+                    </section>
+
+                    <section>
+                        <h3>Grupo de Telegram: OSM España</h3>
+                        <img src="img/telegram.png" height='600'>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>Proyectos de futuro</h3>
+                    <ul>
+                        <li>Importaciones</li>
+                        <li>Conversaciones con IGN</li>
+                    </ul>
+                    <br/><br>
+                    <h5 style='color:#0000a0; font-weight: bold'>Seguir generando y compartiendo información cartográfica de calidad</h5>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Humanitarian OpenStreetMap Team</h2>
+                        <h3>Ayudando al mundo a través de la cartografía</h3>
+                        <img src="resources/logo_hot.png" alt="">
+                    </section>
+                    <section>
+                        <h2 id="osm-y-los-datos-humanitarios">OSM y los datos humanitarios</h2>
+                        <blockquote>
+                        <p>Los datos libres y abiertos son tremendamente beneficiosos para la ayuda
+                        humanitaria y el desarrollo económico.</p>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h2 id="enero-2010">Enero 2010</h2>
+                        <!--<p><img src="resources/haiti-video.png" alt="video" style="width:70%">[> <]</p>-->
+                        <iframe src="https://player.vimeo.com/video/9182869" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <p><a href="https://vimeo.com/9182869">OpenStreetMap - Project Haiti</a> from <a href="https://vimeo.com/itoworld">ItoWorld</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                    </section>
+                    <section>
+                        <p><img src="resources/haiti-00.png" alt=""></p>
+                        <p>12 de enero de 2010</p>
+                    </section>
+                    <section>
+                        <p><img src="resources/haiti-01.png" alt=""></p>
+                        <p>De una simple intersección de calles&#8230;</p>
+                    </section>
+                    <section>
+                        <p><img src="resources/haiti-02.png" alt=""></p>
+                        <p>En la que empezaron a aparecer zonas y edificios&#8230;</p>
+                    </section>
+                    <section>
+                        <p><img src="resources/haiti-04.png" alt=""></p>
+                        <p>Hasta que se completó con todos los campamentos de refugiados</p>
+                    </section>
+                    <section>
+                        <h2 id="el-mejor-mapa-br-de-puerto-principe">El mejor mapa<br> de Puerto Principe</h2>
+                        <p><img src="resources/haiti-05.png" alt=""></p>
+                        <p>28 días después</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2 id="puente-cartogr-fico">Puente cartográfico</h2>
+                        <p>ONG creada en agosto de 2010</p>
+                        <p><img src="resources/osm_bridge.png" alt="Puente"></p>
+                    </section>
+                    <section>
+                        <h2 id="red-humanitaria-digital">Red Humanitaria Digital</h2>
+                        <p><img src="resources/osm_interaction.png" alt="Interaction"></p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2 id="hot-package">HOT Package</h2>
+                        <ul>
+                        <li>Learn OSM</li>
+                        <li>Estadillos de campo</li>
+                        <li>Configuraciones de JOSM</li>
+                        <li>Tasking Manager</li>
+                        <li>Comunidad</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2 id="learnosm-org"><a href="http://learnosm.org">learnosm.org</a></h2>
+                        <p><img src="resources/osm_learnosm.png" alt="learnosm"></p>
+                    </section>
+                    <section>
+                        <h2 id="estadillos-de-campo">Estadillos de campo</h2>
+                        <p><img src="resources/osm_forms.png" alt="formularios"></p>
+                    </section>
+                    <section>
+                        <h2 id="configuraciones-de-josm">Configuraciones de JOSM</h2>
+                        <p><img src="resources/osm_josm.png" alt="josm presets"></p>
+                    </section>
+                    <section>
+                        <h2 id="tasking-manager">Tasking Manager</h2>
+                        <p><img src="resources/osm_tasking.png" alt="task manager"></p>
+                    </section>
+                    <section>
+                        <h2 id="comunidad">Comunidad</h2>
+                        <p><img src="resources/osm_community.png" alt="comunidad"></p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <p><img src="resources/osm_missing.png" alt="missing map I" style="width:55%"><!-- --></p>
+                        <p><img src="resources/missing-maps.png" alt="missing map II" style="width:55%"><!-- --></p>
+                    </section>
+                    <section>
+                        <p><img src="resources/missing_valencia.jpg" alt="missing map Valencia" style="width:95%"><!-- --></p>
+                        <p>Missing Maps Valencia: Geovoluntariado UPV (Diciembre 2016)</p>
+                    </section>
+                </section>
+
+
+                <section>
+                    <h1>THE END</h1>
+                    <h3>BY Pedro-Juan Ferrer, Santiago Higuera & Jorge Sanz</h3>
+                    <p>
+                    <div style="width: 450px;margin-left:auto; margin-right:auto">
+                        <a class="image" href="http://geoinquietos.org" target="_blank">
+                        <img src="img/geoinquietosvlc_logo.png" alt="geoinquietosvlc" style="float:left; margin:10px; width: 100px">
+                        <img src="img/geoinquietosmad_logo.png" alt="geoinquietosmad" style="float:left; margin:10px; width: 100px">
+                        <img src="img/osgeo-es.png" alt="osgeoes" style="float:left; margin:10px; width: 100px">
+                        </a>
+                    </div>
           </p>
           <p style='clear:both'>
             Esta obra está bajo una Licencia<br/><a rel="license"
@@ -295,27 +317,27 @@
             <a rel="license"
             href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">
             <img src="img/cc-by-nc-sa.png" class="no-back" width='200'></a>
-					</section>
-			</div>
-		</div>
+                    </section>
+            </div>
+        </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-		
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>
